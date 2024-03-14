@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+    background-color: #1C1C1C;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, .05);
+}
+
+.display {
+    height: 80px;
+    width: calc(100% - 18px);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: right;
+    pointer-events: none;
+    padding: 0 10px;
+    background: #dadada;
+    color: #1C1C1C;
+
+}
+
+.clear {
+    background-color: rgb(212, 8, 8);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.buttons button {
+    padding: 14px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.buttons button:active {
+    transform: scale(0.99);
+}
+
+.operator {
+    background: rgb(61, 61, 61);
+}
+
+.values {
+    background-color: rgb(105, 105, 105);
+}
